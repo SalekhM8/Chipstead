@@ -1,0 +1,41 @@
+{
+  "name": "Chipstead Tandoori",
+  "short_name": "Chipstead",
+  "description": "Authentic Indian Restaurant - Award-winning cuisine and premium dining experience",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0E0D",
+  "theme_color": "#D4AF37",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "restaurant", "lifestyle"],
+  "lang": "en-GB",
+  "dir": "ltr",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "/screenshot-desktop.png",
+      "type": "image/png",
+      "sizes": "1920x1080"
+    },
+    {
+      "src": "/screenshot-mobile.png",
+      "type": "image/png",
+      "sizes": "750x1334"
+    }
+  ]
+}
+

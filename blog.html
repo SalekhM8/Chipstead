@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Blog - Chipstead Tandoori | Indian Cuisine Stories, Recipes & News</title>
+    <meta name="title" content="Blog - Chipstead Tandoori | Indian Cuisine Stories, Recipes & News">
+    <meta name="description" content="Discover authentic Indian cuisine stories, traditional recipes, cooking tips, and restaurant news from Chipstead Tandoori. Learn about Indian spices, culture, and food traditions.">
+    <meta name="keywords" content="Indian food blog, Indian recipes, cooking tips, Indian spices, tandoori cooking, Indian cuisine guide, curry recipes, Chipstead Tandoori news">
+    <meta name="author" content="Chipstead Tandoori">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.chipsteadtandoori.com/blog.html">
+    <meta property="og:title" content="Blog - Chipstead Tandoori">
+    <meta property="og:description" content="Discover authentic Indian cuisine stories, traditional recipes, and cooking tips from Chipstead Tandoori.">
+    <meta property="og:image" content="https://www.chipsteadtandoori.com/tandoori.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.chipsteadtandoori.com/blog.html">
+    <meta property="twitter:title" content="Blog - Chipstead Tandoori">
+    <meta property="twitter:description" content="Discover authentic Indian cuisine stories, traditional recipes, and cooking tips.">
+    <meta property="twitter:image" content="https://www.chipsteadtandoori.com/tandoori.png">
+    
+    <link rel="canonical" href="https://www.chipsteadtandoori.com/blog.html">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#D4AF37">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Chipstead Tandoori Blog",
+      "description": "Stories and insights about authentic Indian cuisine",
+      "publisher": {
+        "@type": "Restaurant",
+        "name": "Chipstead Tandoori",
+        "url": "https://www.chipsteadtandoori.com"
+      }
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog-styles.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bgVideo">
+            <source src="chipstead.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="chipster.png" alt="Chipstead Tandoori Logo">
+                <span class="logo-text">CHIPSTEAD<br>TANDOORI</span>
+            </a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="https://chipsteadtandoori.app4food.co.uk/" class="btn-order">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="hero-content glass-card">
+                <h1 class="hero-title">Our <span class="highlight">Blog</span></h1>
+                <p class="hero-subtitle">Stories, recipes, and culinary inspiration</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <!-- Featured Post -->
+            <article class="featured-post glass-card" itemscope itemtype="https://schema.org/BlogPosting">
+                <div class="post-image">
+                    <img src="tandoori.png" alt="The Art of Tandoori Cooking" itemprop="image">
+                    <span class="post-badge">Featured</span>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-category"><i class="fas fa-folder"></i> Cooking Techniques</span>
+                        <span class="post-date"><i class="fas fa-calendar"></i> <time datetime="2024-11-01" itemprop="datePublished">November 1, 2024</time></span>
+                        <span class="post-read-time"><i class="fas fa-clock"></i> 5 min read</span>
+                    </div>
+                    <h2 class="post-title" itemprop="headline">The Art of Tandoori Cooking: Ancient Techniques for Modern Flavour</h2>
+                    <p class="post-excerpt" itemprop="description">Discover the centuries-old secrets behind authentic tandoori cooking. From clay oven preparation to the perfect marinade, learn how we create those signature smoky flavours that make tandoori dishes truly exceptional.</p>
+                    <div class="post-footer">
+                        <a href="#" class="btn btn-primary">Read More</a>
+                        <div class="post-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                            <span>By <span itemprop="name">Chef Mohammed</span></span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-post glass-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <div class="post-image">
+                        <img src="balti.png" alt="Understanding Balti Cuisine" itemprop="image">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-category"><i class="fas fa-folder"></i> Cuisine History</span>
+                            <span class="post-date"><i class="fas fa-calendar"></i> <time datetime="2024-10-28" itemprop="datePublished">October 28, 2024</time></span>
+                        </div>
+                        <h3 class="post-title" itemprop="headline">Understanding Balti: The Story Behind Britain's Favorite Curry</h3>
+                        <p class="post-excerpt" itemprop="description">Explore the fascinating history of Balti cuisine and why it has become one of the most beloved curry styles in the UK.</p>
+                        <a href="#" class="post-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-post glass-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <div class="post-image">
+                        <img src="onionbhaji.png" alt="Perfect Onion Bhaji Recipe" itemprop="image">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-category"><i class="fas fa-folder"></i> Recipes</span>
+                            <span class="post-date"><i class="fas fa-calendar"></i> <time datetime="2024-10-25" itemprop="datePublished">October 25, 2024</time></span>
+                        </div>
+                        <h3 class="post-title" itemprop="headline">How to Make Perfect Onion Bhajis at Home</h3>
+                        <p class="post-excerpt" itemprop="description">Learn the secret to creating crispy, golden onion bhajis with our authentic recipe and pro tips from our kitchen.</p>
+                        <a href="#" class="post-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-post glass-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <div class="post-image">
+                        <img src="lambchops.png" alt="Indian Spices Guide" itemprop="image">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-category"><i class="fas fa-folder"></i> Ingredients</span>
+                            <span class="post-date"><i class="fas fa-calendar"></i> <time datetime="2024-10-20" itemprop="datePublished">October 20, 2024</time></span>
+                        </div>
+                        <h3 class="post-title" itemprop="headline">A Complete Guide to Essential Indian Spices</h3>
+                        <p class="post-excerpt" itemprop="description">From cumin to cardamom, discover the essential spices that form the foundation of authentic Indian cuisine.</p>
+                        <a href="#" class="post-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-post glass-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <div class="post-image">
+                        <img src="tandoori.png" alt="Vegetarian Indian Dishes" itemprop="image">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-category"><i class="fas fa-folder"></i> Health & Nutrition</span>
+                            <span class="post-date"><i class="fas fa-calendar"></i> <time datetime="2024-10-15" itemprop="datePublished">October 15, 2024</time></span>
+                        </div>
+                        <h3 class="post-title" itemprop="headline">10 Delicious Vegetarian Indian Dishes You Must Try</h3>
+                        <p class="post-excerpt" itemprop="description">Discover the rich variety of vegetarian options in Indian cuisine, from paneer delights to dal masterpieces.</p>
+                        <a href="#" class="post-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-post glass-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <div class="post-image">
+                        <img src="balti.png" alt="Perfect Rice for Curry" itemprop="image">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-category"><i class="fas fa-folder"></i> Cooking Tips</span>
+                            <span class="post-date"><i class="fas fa-calendar"></i> <time datetime="2024-10-10" itemprop="datePublished">October 10, 2024</time></span>
+                        </div>
+                        <h3 class="post-title" itemprop="headline">The Perfect Basmati Rice: Tips from Our Chefs</h3>
+                        <p class="post-excerpt" itemprop="description">Master the art of cooking fluffy, fragrant basmati rice that perfectly complements any curry dish.</p>
+                        <a href="#" class="post-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-post glass-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <div class="post-image">
+                        <img src="lambchops.png" alt="Pairing Wine with Indian Food" itemprop="image">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-category"><i class="fas fa-folder"></i> Food & Drink</span>
+                            <span class="post-date"><i class="fas fa-calendar"></i> <time datetime="2024-10-05" itemprop="datePublished">October 5, 2024</time></span>
+                        </div>
+                        <h3 class="post-title" itemprop="headline">Wine Pairing Guide for Indian Cuisine</h3>
+                        <p class="post-excerpt" itemprop="description">Enhance your dining experience with our expert guide to pairing wines with spicy and flavourful Indian dishes.</p>
+                        <a href="#" class="post-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="newsletter-section glass-card">
+                <div class="newsletter-content">
+                    <i class="fas fa-envelope-open newsletter-icon"></i>
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for the latest recipes, cooking tips, and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+
+            <!-- Categories Widget -->
+            <div class="blog-categories glass-card">
+                <h3>Explore Topics</h3>
+                <div class="categories-grid">
+                    <a href="#" class="category-tag">
+                        <i class="fas fa-fire"></i>
+                        <span>Cooking Techniques</span>
+                        <span class="count">12</span>
+                    </a>
+                    <a href="#" class="category-tag">
+                        <i class="fas fa-book"></i>
+                        <span>Recipes</span>
+                        <span class="count">24</span>
+                    </a>
+                    <a href="#" class="category-tag">
+                        <i class="fas fa-pepper-hot"></i>
+                        <span>Ingredients</span>
+                        <span class="count">18</span>
+                    </a>
+                    <a href="#" class="category-tag">
+                        <i class="fas fa-heart"></i>
+                        <span>Health & Nutrition</span>
+                        <span class="count">15</span>
+                    </a>
+                    <a href="#" class="category-tag">
+                        <i class="fas fa-history"></i>
+                        <span>Cuisine History</span>
+                        <span class="count">9</span>
+                    </a>
+                    <a href="#" class="category-tag">
+                        <i class="fas fa-wine-glass"></i>
+                        <span>Food & Drink</span>
+                        <span class="count">11</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-card">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Chipstead Tandoori</h4>
+                    <p>Authentic Indian cuisine crafted with passion and tradition.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Order Online</h4>
+                    <a href="https://chipsteadtandoori.app4food.co.uk/" class="btn btn-primary" style="display: inline-block; margin-top: 10px;">
+                        <i class="fas fa-shopping-bag"></i> Order from Our App
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chipstead Tandoori. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+

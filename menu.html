@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Our Menu - Chipstead Tandoori | Authentic Indian Dishes & Tandoori Specialties</title>
+    <meta name="title" content="Our Menu - Chipstead Tandoori | Authentic Indian Dishes & Tandoori Specialties">
+    <meta name="description" content="Explore our extensive menu featuring authentic Indian cuisine, tandoori specialties, curries, biryanis, and vegetarian options. Fresh ingredients and traditional recipes. View prices and order online.">
+    <meta name="keywords" content="Indian menu, tandoori menu, curry menu, biryani, vegetarian Indian food, Chipstead Tandoori prices, Indian restaurant menu">
+    <meta name="author" content="Chipstead Tandoori">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.chipsteadtandoori.com/menu.html">
+    <meta property="og:title" content="Our Menu - Chipstead Tandoori">
+    <meta property="og:description" content="Explore our extensive menu featuring authentic Indian cuisine, tandoori specialties, curries, and more.">
+    <meta property="og:image" content="https://www.chipsteadtandoori.com/tandoori.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.chipsteadtandoori.com/menu.html">
+    <meta property="twitter:title" content="Our Menu - Chipstead Tandoori">
+    <meta property="twitter:description" content="Explore our extensive menu featuring authentic Indian cuisine, tandoori specialties, curries, and more.">
+    <meta property="twitter:image" content="https://www.chipsteadtandoori.com/tandoori.png">
+    
+    <link rel="canonical" href="https://www.chipsteadtandoori.com/menu.html">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#D4AF37">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Menu",
+      "name": "Chipstead Tandoori Menu",
+      "description": "Authentic Indian cuisine menu featuring tandoori specialties, curries, and traditional dishes",
+      "provider": {
+        "@type": "Restaurant",
+        "name": "Chipstead Tandoori",
+        "url": "https://www.chipsteadtandoori.com"
+      }
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu-styles.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bgVideo">
+            <source src="chipstead.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="chipster.png" alt="Chipstead Tandoori Logo">
+                <span class="logo-text">CHIPSTEAD<br>TANDOORI</span>
+            </a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="https://chipsteadtandoori.app4food.co.uk/" class="btn-order">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu Hero -->
+    <section class="menu-hero">
+        <div class="container">
+            <div class="hero-content glass-card">
+                <h1 class="hero-title">Our <span class="highlight">Menu</span></h1>
+                <p class="hero-subtitle">Authentic flavours, crafted with passion</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-section">
+        <div class="container">
+            <!-- Category Filter -->
+            <div class="menu-filters glass-card">
+                <button class="filter-btn active" data-category="all">All Dishes</button>
+                <button class="filter-btn" data-category="starters">Starters</button>
+                <button class="filter-btn" data-category="tandoori">Tandoori</button>
+                <button class="filter-btn" data-category="curry">Curries</button>
+                <button class="filter-btn" data-category="biryani">Biryani</button>
+                <button class="filter-btn" data-category="vegetarian">Vegetarian</button>
+                <button class="filter-btn" data-category="breads">Breads & Sides</button>
+            </div>
+
+            <!-- Starters -->
+            <div class="menu-category" data-category="starters">
+                <div class="category-header glass-card">
+                    <h2 class="category-title"><i class="fas fa-star"></i> Starters</h2>
+                    <p class="category-description">Begin your culinary journey with our exquisite appetizers</p>
+                </div>
+                
+                <div class="menu-grid">
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Onion Bhaji</h3>
+                            <span class="item-price">£4.95</span>
+                        </div>
+                        <p class="item-description">Crispy golden fritters made with fresh onions and aromatic spices</p>
+                        <div class="item-tags">
+                            <span class="tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                            <span class="tag popular"><i class="fas fa-fire"></i> Popular</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Vegetable Samosa</h3>
+                            <span class="item-price">£4.50</span>
+                        </div>
+                        <p class="item-description">Crispy pastry filled with spiced potatoes and peas</p>
+                        <div class="item-tags">
+                            <span class="tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Chicken Tikka</h3>
+                            <span class="item-price">£5.95</span>
+                        </div>
+                        <p class="item-description">Tender chicken pieces marinated in yogurt and spices, grilled in tandoor</p>
+                        <div class="item-tags">
+                            <span class="tag chef-special"><i class="fas fa-award"></i> Chef's Special</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Seekh Kebab</h3>
+                            <span class="item-price">£5.95</span>
+                        </div>
+                        <p class="item-description">Minced lamb with herbs and spices, grilled on skewers</p>
+                        <div class="item-tags">
+                            <span class="tag spicy"><i class="fas fa-pepper-hot"></i> Spicy</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Prawn Puri</h3>
+                            <span class="item-price">£6.95</span>
+                        </div>
+                        <p class="item-description">Spiced prawns served on crispy puri bread</p>
+                        <div class="item-tags">
+                            <span class="tag popular"><i class="fas fa-fire"></i> Popular</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Mixed Platter (For 2)</h3>
+                            <span class="item-price">£12.95</span>
+                        </div>
+                        <p class="item-description">Selection of chicken tikka, lamb kebab, samosa, and onion bhaji</p>
+                        <div class="item-tags">
+                            <span class="tag chef-special"><i class="fas fa-award"></i> Chef's Special</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tandoori Specialties -->
+            <div class="menu-category" data-category="tandoori">
+                <div class="category-header glass-card">
+                    <h2 class="category-title"><i class="fas fa-fire"></i> Tandoori Specialities</h2>
+                    <p class="category-description">Cooked in our traditional clay oven for authentic flavour</p>
+                </div>
+                
+                <div class="menu-grid">
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Tandoori Chicken (Half)</h3>
+                            <span class="item-price">£10.95</span>
+                        </div>
+                        <p class="item-description">Spring chicken marinated in yogurt, herbs, and spices, grilled in tandoor</p>
+                        <div class="item-tags">
+                            <span class="tag chef-special"><i class="fas fa-award"></i> Chef's Special</span>
+                            <span class="tag popular"><i class="fas fa-fire"></i> Popular</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Lamb Chops</h3>
+                            <span class="item-price">£14.95</span>
+                        </div>
+                        <p class="item-description">Premium lamb chops marinated in exotic spices, chargrilled to perfection</p>
+                        <div class="item-tags">
+                            <span class="tag chef-special"><i class="fas fa-award"></i> Chef's Special</span>
+                            <span class="tag premium"><i class="fas fa-gem"></i> Premium</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Chicken Shashlik</h3>
+                            <span class="item-price">£12.95</span>
+                        </div>
+                        <p class="item-description">Marinated chicken with peppers, onions, and tomatoes grilled on skewers</p>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Paneer Tikka</h3>
+                            <span class="item-price">£11.95</span>
+                        </div>
+                        <p class="item-description">Indian cottage cheese marinated and grilled with vegetables</p>
+                        <div class="item-tags">
+                            <span class="tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Tandoori King Prawns</h3>
+                            <span class="item-price">£16.95</span>
+                        </div>
+                        <p class="item-description">Jumbo prawns marinated in tandoori spices and grilled</p>
+                        <div class="item-tags">
+                            <span class="tag premium"><i class="fas fa-gem"></i> Premium</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Mixed Tandoori Grill</h3>
+                            <span class="item-price">£15.95</span>
+                        </div>
+                        <p class="item-description">Assortment of tandoori chicken, chicken tikka, lamb chop, and seekh kebab</p>
+                        <div class="item-tags">
+                            <span class="tag chef-special"><i class="fas fa-award"></i> Chef's Special</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curries -->
+            <div class="menu-category" data-category="curry">
+                <div class="category-header glass-card">
+                    <h2 class="category-title"><i class="fas fa-bowl-food"></i> Classic Curries</h2>
+                    <p class="category-description">Traditional recipes passed down through generations</p>
+                </div>
+                
+                <div class="curry-options glass-card">
+                    <h3>Choose Your Protein:</h3>
+                    <div class="protein-grid">
+                        <div class="protein-option">
+                            <span>Chicken</span>
+                            <span class="base-price">£9.95</span>
+                        </div>
+                        <div class="protein-option">
+                            <span>Lamb</span>
+                            <span class="base-price">£10.95</span>
+                        </div>
+                        <div class="protein-option">
+                            <span>Prawn</span>
+                            <span class="base-price">£11.95</span>
+                        </div>
+                        <div class="protein-option">
+                            <span>Vegetable</span>
+                            <span class="base-price">£8.95</span>
+                        </div>
+                        <div class="protein-option">
+                            <span>King Prawn</span>
+                            <span class="base-price">£14.95</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-grid">
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Korma</h3>
+                        </div>
+                        <p class="item-description">Mild, creamy curry with coconut and almonds</p>
+                        <div class="item-tags">
+                            <span class="tag mild"><i class="fas fa-circle"></i> Mild</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Tikka Masala</h3>
+                        </div>
+                        <p class="item-description">Rich tomato-based sauce with cream and aromatic spices</p>
+                        <div class="item-tags">
+                            <span class="tag popular"><i class="fas fa-fire"></i> Popular</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Balti</h3>
+                        </div>
+                        <p class="item-description">Cooked with fresh tomatoes, peppers, and onions in traditional Balti style</p>
+                        <div class="item-tags">
+                            <span class="tag chef-special"><i class="fas fa-award"></i> Chef's Special</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Madras</h3>
+                        </div>
+                        <p class="item-description">Hot curry with a rich, spicy sauce</p>
+                        <div class="item-tags">
+                            <span class="tag spicy"><i class="fas fa-pepper-hot"></i> Hot</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Vindaloo</h3>
+                        </div>
+                        <p class="item-description">Very hot curry with potato and vinegar</p>
+                        <div class="item-tags">
+                            <span class="tag spicy"><i class="fas fa-pepper-hot"></i> Very Hot</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Jalfrezi</h3>
+                        </div>
+                        <p class="item-description">Cooked with green chilies, peppers, onions, and tomatoes</p>
+                        <div class="item-tags">
+                            <span class="tag spicy"><i class="fas fa-pepper-hot"></i> Spicy</span>
+                            <span class="tag popular"><i class="fas fa-fire"></i> Popular</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Rogan Josh</h3>
+                        </div>
+                        <p class="item-description">Medium curry with tomatoes, peppers, and fragrant spices</p>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Saag</h3>
+                        </div>
+                        <p class="item-description">Cooked with spinach and authentic spices</p>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Bhuna</h3>
+                        </div>
+                        <p class="item-description">Dry, thick curry cooked with onions, tomatoes, and peppers</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Biryani -->
+            <div class="menu-category" data-category="biryani">
+                <div class="category-header glass-card">
+                    <h2 class="category-title"><i class="fas fa-utensils"></i> Biryani</h2>
+                    <p class="category-description">Fragrant basmati rice dishes cooked with aromatic spices</p>
+                </div>
+                
+                <div class="menu-grid">
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Chicken Biryani</h3>
+                            <span class="item-price">£12.95</span>
+                        </div>
+                        <p class="item-description">Basmati rice cooked with chicken, herbs, and spices. Served with vegetable curry</p>
+                        <div class="item-tags">
+                            <span class="tag popular"><i class="fas fa-fire"></i> Popular</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Lamb Biryani</h3>
+                            <span class="item-price">£13.95</span>
+                        </div>
+                        <p class="item-description">Tender lamb pieces with fragrant rice and aromatic spices. Served with vegetable curry</p>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">King Prawn Biryani</h3>
+                            <span class="item-price">£16.95</span>
+                        </div>
+                        <p class="item-description">Jumbo prawns with basmati rice and exotic spices. Served with vegetable curry</p>
+                        <div class="item-tags">
+                            <span class="tag premium"><i class="fas fa-gem"></i> Premium</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Vegetable Biryani</h3>
+                            <span class="item-price">£10.95</span>
+                        </div>
+                        <p class="item-description">Mixed vegetables with basmati rice and aromatic spices. Served with vegetable curry</p>
+                        <div class="item-tags">
+                            <span class="tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Special Mixed Biryani</h3>
+                            <span class="item-price">£15.95</span>
+                        </div>
+                        <p class="item-description">Chicken, lamb, and prawns cooked with rice. Served with vegetable curry</p>
+                        <div class="item-tags">
+                            <span class="tag chef-special"><i class="fas fa-award"></i> Chef's Special</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vegetarian -->
+            <div class="menu-category" data-category="vegetarian">
+                <div class="category-header glass-card">
+                    <h2 class="category-title"><i class="fas fa-leaf"></i> Vegetarian Delights</h2>
+                    <p class="category-description">Fresh vegetables prepared with traditional spices</p>
+                </div>
+                
+                <div class="menu-grid">
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Saag Paneer</h3>
+                            <span class="item-price">£8.95</span>
+                        </div>
+                        <p class="item-description">Indian cottage cheese cooked with spinach and cream</p>
+                        <div class="item-tags">
+                            <span class="tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                            <span class="tag popular"><i class="fas fa-fire"></i> Popular</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Chana Masala</h3>
+                            <span class="item-price">£7.95</span>
+                        </div>
+                        <p class="item-description">Chickpeas cooked in onion and tomato sauce with aromatic spices</p>
+                        <div class="item-tags">
+                            <span class="tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Tarka Dal</h3>
+                            <span class="item-price">£7.50</span>
+                        </div>
+                        <p class="item-description">Lentils tempered with garlic and cumin</p>
+                        <div class="item-tags">
+                            <span class="tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Aloo Gobi</h3>
+                            <span class="item-price">£7.95</span>
+                        </div>
+                        <p class="item-description">Potato and cauliflower cooked with spices</p>
+                        <div class="item-tags">
+                            <span class="tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Vegetable Jalfrezi</h3>
+                            <span class="item-price">£8.50</span>
+                        </div>
+                        <p class="item-description">Mixed vegetables cooked with green chilies and peppers</p>
+                        <div class="item-tags">
+                            <span class="tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                            <span class="tag spicy"><i class="fas fa-pepper-hot"></i> Spicy</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Paneer Tikka Masala</h3>
+                            <span class="item-price">£9.95</span>
+                        </div>
+                        <p class="item-description">Cottage cheese in rich tomato and cream sauce</p>
+                        <div class="item-tags">
+                            <span class="tag veg"><i class="fas fa-leaf"></i> Veg</span>
+                            <span class="tag chef-special"><i class="fas fa-award"></i> Chef's Special</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breads & Sides -->
+            <div class="menu-category" data-category="breads">
+                <div class="category-header glass-card">
+                    <h2 class="category-title"><i class="fas fa-bread-slice"></i> Breads & Sides</h2>
+                    <p class="category-description">Freshly baked breads and accompaniments</p>
+                </div>
+                
+                <div class="menu-grid menu-grid-compact">
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Plain Naan</h3>
+                            <span class="item-price">£3.50</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Garlic Naan</h3>
+                            <span class="item-price">£3.95</span>
+                        </div>
+                        <div class="item-tags">
+                            <span class="tag popular"><i class="fas fa-fire"></i> Popular</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Peshwari Naan</h3>
+                            <span class="item-price">£3.95</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Keema Naan</h3>
+                            <span class="item-price">£4.50</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Tandoori Roti</h3>
+                            <span class="item-price">£2.95</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Pilau Rice</h3>
+                            <span class="item-price">£3.50</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Coconut Rice</h3>
+                            <span class="item-price">£3.95</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Mushroom Rice</h3>
+                            <span class="item-price">£3.95</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Raita</h3>
+                            <span class="item-price">£2.50</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Mango Chutney</h3>
+                            <span class="item-price">£1.50</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Poppadom (Each)</h3>
+                            <span class="item-price">£0.95</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item glass-card">
+                        <div class="item-header">
+                            <h3 class="item-name">Pickle Tray</h3>
+                            <span class="item-price">£3.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="menu-cta glass-card">
+                <h2>Ready to Order?</h2>
+                <p>Experience the authentic flavours of India delivered to your door</p>
+                <a href="https://chipsteadtandoori.app4food.co.uk/" class="btn btn-primary btn-large">Order Online Now</a>
+                <p class="cta-note">Or call us at <a href="tel:01737555555">01737 555 555</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-card">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Chipstead Tandoori</h4>
+                    <p>Authentic Indian cuisine crafted with passion and tradition.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Order Online</h4>
+                    <a href="https://chipsteadtandoori.app4food.co.uk/" class="btn btn-primary" style="display: inline-block; margin-top: 10px;">
+                        <i class="fas fa-shopping-bag"></i> Order from Our App
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chipstead Tandoori. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="menu-script.js"></script>
+</body>
+</html>
+

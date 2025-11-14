@@ -1,0 +1,405 @@
+/* ===================================
+   MENU PAGE SPECIFIC STYLES
+   =================================== */
+
+.menu-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px var(--container-padding) 80px;
+}
+
+.menu-hero .hero-content {
+    max-width: 700px;
+    text-align: center;
+}
+
+/* Menu Filters */
+.menu-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+    padding: 30px;
+}
+
+.filter-btn {
+    padding: 12px 28px;
+    border: 2px solid var(--gold);
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--gold-light);
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--gold);
+    color: var(--dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* Menu Categories */
+.menu-section {
+    padding: 60px 0 var(--section-padding);
+}
+
+.menu-category {
+    margin-bottom: 100px;
+}
+
+.category-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px;
+}
+
+.category-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--gold);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.category-title i {
+    font-size: 0.8em;
+}
+
+.category-description {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 300;
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 25px;
+}
+
+.menu-grid-compact {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.menu-item {
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.5);
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    gap: 15px;
+}
+
+.item-name {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--gold);
+    font-weight: 600;
+    flex: 1;
+}
+
+.item-price {
+    font-size: 1.3rem;
+    color: var(--gold-light);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.item-description {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Item Tags */
+.item-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tag i {
+    font-size: 10px;
+}
+
+.tag.veg {
+    background: rgba(76, 175, 80, 0.2);
+    color: #81C784;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.tag.popular {
+    background: rgba(255, 87, 34, 0.2);
+    color: #FF8A65;
+    border: 1px solid rgba(255, 87, 34, 0.3);
+}
+
+.tag.chef-special {
+    background: rgba(212, 175, 55, 0.2);
+    color: var(--gold);
+    border: 1px solid var(--gold);
+}
+
+.tag.spicy {
+    background: rgba(244, 67, 54, 0.2);
+    color: #EF5350;
+    border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+.tag.premium {
+    background: rgba(156, 39, 176, 0.2);
+    color: #BA68C8;
+    border: 1px solid rgba(156, 39, 176, 0.3);
+}
+
+.tag.mild {
+    background: rgba(33, 150, 243, 0.2);
+    color: #64B5F6;
+    border: 1px solid rgba(33, 150, 243, 0.3);
+}
+
+/* Curry Options */
+.curry-options {
+    margin-bottom: 40px;
+    padding: 40px;
+}
+
+.curry-options h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.protein-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.protein-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(212, 175, 55, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.protein-option:hover {
+    background: rgba(212, 175, 55, 0.1);
+    border-color: var(--gold);
+    transform: translateX(5px);
+}
+
+.protein-option span:first-child {
+    color: var(--gold-light);
+    font-weight: 500;
+}
+
+.base-price {
+    color: var(--gold);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Menu CTA */
+.menu-cta {
+    text-align: center;
+    padding: 60px 40px;
+    margin-top: 80px;
+}
+
+.menu-cta h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.menu-cta p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+}
+
+.menu-cta .btn-large {
+    padding: 20px 50px;
+    font-size: 18px;
+}
+
+.cta-note {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.cta-note a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cta-note a:hover {
+    text-decoration: underline;
+}
+
+/* Dietary Info Legend */
+.dietary-legend {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.legend-item i {
+    font-size: 1.2rem;
+}
+
+/* Responsive Design for Menu */
+@media (max-width: 1024px) {
+    .menu-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-hero {
+        min-height: 50vh;
+        padding: 120px var(--container-padding) 60px;
+    }
+
+    .menu-filters {
+        padding: 20px;
+    }
+
+    .filter-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .menu-grid-compact {
+        grid-template-columns: 1fr;
+    }
+
+    .category-title {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .protein-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-cta {
+        padding: 40px 25px;
+    }
+
+    .menu-cta h2 {
+        font-size: 2rem;
+    }
+
+    .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .item-price {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        padding: 25px 20px;
+    }
+
+    .item-name {
+        font-size: 1.3rem;
+    }
+
+    .item-description {
+        font-size: 0.9rem;
+    }
+
+    .menu-cta .btn-large {
+        padding: 16px 35px;
+        font-size: 16px;
+    }
+}
+
+/* Hide inactive categories (for filtering) */
+.menu-category.hidden {
+    display: none;
+}
+
+/* Fade-in animation for filtered items */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.menu-item.filtered {
+    animation: fadeInScale 0.2s ease;
+}
+
