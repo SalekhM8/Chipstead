@@ -249,6 +249,34 @@ if (cookImage && cookContent) {
 }
 
 // ===================================
+// FEATURE GRAPHICS - MULTIPLE SLIDE INS
+// ===================================
+const tandooriFeature = document.getElementById('tandooriFeature');
+const baltiFeature = document.getElementById('baltiFeature');
+const lambFeature = document.getElementById('lambFeature');
+
+[tandooriFeature, baltiFeature, lambFeature].forEach(element => {
+    if (element) {
+        const featureObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateX(0) scale(1)';
+                    featureObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2, rootMargin: '50px 0px 0px 0px' });
+        
+        element.style.opacity = '0';
+        element.style.transform = element.classList.contains('scroll-reveal-left') ? 
+            'translateX(-100px) scale(0.95)' : 'translateX(100px) scale(0.95)';
+        element.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+        
+        featureObserver.observe(element);
+    }
+});
+
+// ===================================
 // PRELOAD CRITICAL RESOURCES
 // ===================================
 window.addEventListener('load', () => {
