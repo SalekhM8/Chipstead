@@ -74,10 +74,10 @@
     }
     </script>
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Dishoom Inspired -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -88,21 +88,18 @@
 <body>
     <!-- Loading Skeleton -->
     <div class="page-loader" id="pageLoader">
-        <div class="loader-content glass-card">
+        <div class="loader-content">
             <div class="loader-logo"></div>
             <div class="loader-bar"></div>
         </div>
     </div>
 
-    <!-- Video Background -->
-    <div class="video-background">
-        <video autoplay muted loop playsinline id="bgVideo">
-            <source src="chipstead.mp4" type="video/mp4">
-        </video>
-        <div class="video-overlay"></div>
+    <!-- Static Background Image -->
+    <div class="hero-background">
+        <img src="foodhero.png" alt="Authentic Indian Cuisine Background">
     </div>
 
-    <!-- Navigation -->
+    <!-- Navigation - Dishoom Style -->
     <nav class="glass-nav" id="mainNav">
         <div class="nav-container">
             <a href="index.html" class="logo">
@@ -125,10 +122,11 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section - Dishoom Style -->
     <section class="hero">
-        <div class="hero-content glass-card">
+        <div class="hero-content">
             <h1 class="hero-title">Experience Authentic<br><span class="highlight">Indian Cuisine</span></h1>
+            <div class="decorative-line"></div>
             <p class="hero-subtitle">Where tradition meets culinary excellence</p>
             <div class="hero-buttons">
                 <a href="menu.html" class="btn btn-primary">View Menu</a>
@@ -140,14 +138,15 @@
     <!-- Special Dishes Section -->
     <section class="special-dishes" id="special-dishes">
         <div class="container">
-            <div class="section-header glass-card">
+            <div class="section-header scroll-reveal-up">
                 <h2 class="section-title">Our Signature Dishes</h2>
+                <div class="decorative-line"></div>
                 <p class="section-subtitle">Crafted with passion, served with love</p>
             </div>
             
             <div class="dishes-scroll-container">
                 <div class="dishes-track" id="dishesTrack">
-                    <div class="dish-card glass-card">
+                    <div class="dish-card">
                         <div class="dish-image-container">
                             <img src="tandoori.png" alt="Tandoori Specialities" class="dish-image">
                             <div class="dish-overlay">
@@ -161,7 +160,7 @@
                         </div>
                     </div>
 
-                    <div class="dish-card glass-card">
+                    <div class="dish-card">
                         <div class="dish-image-container">
                             <img src="balti.png" alt="Balti Dishes" class="dish-image">
                             <div class="dish-overlay">
@@ -175,7 +174,7 @@
                         </div>
                     </div>
 
-                    <div class="dish-card glass-card">
+                    <div class="dish-card">
                         <div class="dish-image-container">
                             <img src="lambchops.png" alt="Lamb Chops" class="dish-image">
                             <div class="dish-overlay">
@@ -189,7 +188,7 @@
                         </div>
                     </div>
 
-                    <div class="dish-card glass-card">
+                    <div class="dish-card">
                         <div class="dish-image-container">
                             <img src="onionbhaji.png" alt="Onion Bhaji" class="dish-image">
                             <div class="dish-overlay">
@@ -212,11 +211,48 @@
         </div>
     </section>
 
+    <!-- Chef Video Section -->
+    <section class="chef-section">
+        <div class="container">
+            <div class="chef-grid">
+                <div class="chef-video-container" id="chefVideo">
+                    <video muted loop playsinline>
+                        <source src="chef.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="chef-content" id="chefContent">
+                    <h2>Our Master Chefs</h2>
+                    <div class="decorative-line" style="margin-left: 0;"></div>
+                    <p>Led by Chef Mohammed, our culinary team brings decades of expertise and passion for authentic Indian cuisine. Every dish is crafted with meticulous attention to detail, honoring traditional recipes while embracing innovation.</p>
+                    <p>From the tandoor to your table, we ensure each meal is a masterpiece of flavour and presentation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cook Image Section -->
+    <section class="cook-section">
+        <div class="container">
+            <div class="cook-grid">
+                <div class="cook-content" id="cookContent">
+                    <h2>Traditional Methods,<br>Modern Excellence</h2>
+                    <div class="decorative-line" style="margin-left: 0;"></div>
+                    <p>We believe in the time-honoured traditions of Indian cooking. Our chefs use authentic techniques passed down through generations, from hand-grinding spices to slow-cooking curries to perfection.</p>
+                    <p>Fresh ingredients, traditional methods, and genuine passion create the unforgettable dining experience that defines Chipstead Tandoori.</p>
+                    <a href="menu.html" class="btn btn-primary" style="display: inline-block; margin-top: 20px;">Explore Our Menu</a>
+                </div>
+                <div class="cook-image-container" id="cookImage">
+                    <img src="cook.png" alt="Traditional Cooking Methods">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section class="about-section" id="about">
         <div class="container">
             <div class="about-grid">
-                <div class="about-content glass-card">
+                <div class="about-content scroll-reveal-left">
                     <h2 class="section-title">Our Story</h2>
                     <p>For over 25 years, Chipstead Tandoori has been serving the finest authentic Indian cuisine in Surrey. Our passion for traditional recipes, combined with the freshest ingredients, creates an unforgettable dining experience.</p>
                     <p>Every dish is crafted with love and attention to detail, honoring the rich culinary heritage of India while embracing modern culinary techniques.</p>
@@ -243,7 +279,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-stats glass-card">
+                <div class="about-stats scroll-reveal-right">
                     <div class="stat-item">
                         <span class="stat-number">25+</span>
                         <span class="stat-label">Years of Excellence</span>
@@ -264,35 +300,36 @@
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="container">
-            <div class="section-header glass-card">
+            <div class="section-header scroll-reveal-up">
                 <h2 class="section-title">Visit Us</h2>
+                <div class="decorative-line"></div>
                 <p class="section-subtitle">We'd love to serve you</p>
             </div>
             
             <div class="contact-grid">
-                <div class="contact-card glass-card">
+                <div class="contact-card">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Location</h3>
                     <p>High Street, Chipstead<br>Surrey, CR5</p>
                 </div>
-                <div class="contact-card glass-card">
+                <div class="contact-card">
                     <i class="fas fa-phone"></i>
                     <h3>Phone</h3>
                     <p>01737 555 555</p>
                 </div>
-                <div class="contact-card glass-card">
+                <div class="contact-card">
                     <i class="fas fa-clock"></i>
                     <h3>Opening Hours</h3>
                     <p>Mon - Sun: 5:00 PM - 11:00 PM</p>
                 </div>
-                <div class="contact-card glass-card">
+                <div class="contact-card">
                     <i class="fas fa-envelope"></i>
                     <h3>Email</h3>
                     <p>info@chipsteadtandoori.com</p>
                 </div>
             </div>
 
-            <div class="social-links glass-card">
+            <div class="social-links">
                 <h3>Follow Us</h3>
                 <div class="social-icons">
                     <a href="https://facebook.com/chipsteadtandoori" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -305,7 +342,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer glass-card">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
