@@ -723,10 +723,11 @@ body::before {
 
 
 .dish-card {
-    min-width: 380px;
+    min-width: 340px;
+    max-width: 340px;
     flex-shrink: 0;
     cursor: pointer;
-    background: var(--cream-light);
+    background: transparent;
     border: 3px solid var(--border-dark);
     border-radius: 12px;
     padding: 0;
