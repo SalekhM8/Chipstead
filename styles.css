@@ -106,7 +106,7 @@ body::before {
     text-align: center;
     border: 3px solid var(--border-dark);
     border-radius: 10px;
-    background: white;
+    background: var(--cream-light);
 }
 
 .loader-logo {
@@ -255,7 +255,7 @@ body::before {
     width: auto;
     border: 2px solid var(--border-dark);
     padding: 5px;
-    background: white;
+    background: var(--cream-light);
 }
 
 .logo-text {
@@ -320,7 +320,7 @@ body::before {
     cursor: pointer;
     padding: 10px;
     border: 2px solid var(--border-dark);
-    background: white;
+    background: var(--cream-light);
     transition: all 0.3s ease;
     z-index: 1001;
 }
@@ -341,7 +341,7 @@ body::before {
 }
 
 .nav-toggle.active span {
-    background: white;
+    background: var(--cream-light);
 }
 
 .nav-toggle.active span:nth-child(1) {
@@ -380,7 +380,7 @@ body::before {
     margin-bottom: 15px;
     border: 3px solid var(--border-dark);
     padding: 12px;
-    background: white;
+    background: var(--cream-light);
     border-radius: 10px;
 }
 
@@ -506,7 +506,7 @@ body::before {
     margin: 0 auto;
     border: 5px solid var(--border-dark);
     border-radius: 10px;
-    background: white;
+    background: var(--cream-light);
     padding: 100px 80px;
     position: relative;
     animation: fadeIn 0.6s ease;
@@ -641,7 +641,7 @@ body::before {
 }
 
 .btn-secondary {
-    background: white;
+    background: var(--cream-light);
     color: var(--text-primary);
     border-left: none;
 }
@@ -665,7 +665,7 @@ body::before {
     margin: 0 auto 80px;
     border: 4px solid var(--border-dark);
     border-radius: 10px;
-    background: white;
+    background: var(--cream-light);
     padding: 50px 40px;
     position: relative;
     overflow: hidden;
@@ -726,7 +726,7 @@ body::before {
     min-width: 380px;
     flex-shrink: 0;
     cursor: pointer;
-    background: white;
+    background: var(--cream-light);
     border: 3px solid var(--border-dark);
     border-radius: 12px;
     padding: 0;
@@ -804,7 +804,7 @@ body::before {
 
 .dish-content {
     padding: 35px;
-    background: white;
+    background: var(--cream-light);
 }
 
 .dish-title {
@@ -842,7 +842,7 @@ body::before {
     height: 60px;
     border: 3px solid var(--border-dark);
     border-radius: 8px;
-    background: white;
+    background: var(--cream-light);
     color: var(--text-primary);
     font-size: 20px;
     cursor: pointer;
@@ -973,7 +973,7 @@ body::before {
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     border: 4px solid var(--border-dark);
     border-radius: 10px;
-    background: white;
+    background: var(--cream-light);
     padding: 50px;
     position: relative;
     overflow: hidden;
@@ -1037,7 +1037,7 @@ body::before {
 .about-content {
     border: 4px solid var(--border-dark);
     border-radius: 10px;
-    background: white;
+    background: var(--cream-light);
     padding: 60px;
     position: relative;
     overflow: hidden;
@@ -1093,7 +1093,7 @@ body::before {
 
 .feature-item:hover {
     border-color: var(--gold);
-    background: white;
+    background: var(--cream-light);
 }
 
 .feature-item i {
@@ -1126,7 +1126,7 @@ body::before {
     padding: 40px 30px;
     border: 3px solid var(--border-dark);
     border-radius: 10px;
-    background: white;
+    background: var(--cream-light);
     position: relative;
     transition: all 0.3s ease;
 }
@@ -1188,7 +1188,7 @@ body::before {
 }
 
 .contact-card:hover {
-    background: white;
+    background: var(--cream-light);
     transform: translateY(-5px);
     box-shadow: 8px 8px 0 rgba(45, 93, 63, 0.2);
 }
@@ -1218,7 +1218,7 @@ body::before {
     padding: 60px;
     border: 4px solid var(--border-dark);
     border-radius: 10px;
-    background: white;
+    background: var(--cream-light);
     margin: 0 auto;
     max-width: 800px;
     position: relative;
@@ -1695,7 +1695,7 @@ body::before {
 .image-card-dishoom {
     border: 4px solid var(--border-dark);
     border-radius: 10px;
-    background: white;
+    background: var(--cream-light);
     overflow: hidden;
     transition: all 0.4s ease;
     cursor: pointer;
@@ -1743,7 +1743,7 @@ body::before {
 
 .card-label-box {
     padding: 35px 30px;
-    background: white;
+    background: var(--cream-light);
     text-align: center;
     position: relative;
 }
@@ -1866,7 +1866,7 @@ body::before {
 .feature-content-box {
     border: 4px solid var(--border-dark);
     border-radius: 10px;
-    background: white;
+    background: var(--cream-light);
     padding: 60px;
     position: relative;
     overflow: hidden;

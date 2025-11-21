@@ -28,7 +28,7 @@
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    background: white;
+    background: var(--cream-light);
     overflow: hidden;
 }
 
@@ -72,7 +72,7 @@
     padding: 50px 40px;
     border: 3px solid var(--border-dark);
     border-radius: 10px;
-    background: white;
+    background: var(--cream-light);
     position: relative;
 }
 
@@ -125,7 +125,7 @@
     padding: 35px;
     border: 3px solid var(--border-dark);
     border-radius: 10px;
-    background: white;
+    background: var(--cream-light);
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
@@ -233,7 +233,7 @@
     padding: 50px;
     border: 3px solid var(--border-dark);
     border-radius: 10px;
-    background: white;
+    background: var(--cream-light);
 }
 
 .curry-options h3 {
@@ -263,7 +263,7 @@
 }
 
 .protein-option:hover {
-    background: white;
+    background: var(--cream-light);
     border-color: var(--gold);
     transform: translateX(5px);
     box-shadow: 4px 4px 0 rgba(212, 175, 55, 0.2);
@@ -288,7 +288,7 @@
     margin-top: 80px;
     border: 4px solid var(--border-dark);
     border-radius: 10px;
-    background: white;
+    background: var(--cream-light);
     position: relative;
 }
 
