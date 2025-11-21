@@ -875,18 +875,18 @@ body::before {
     }
     
     .dish-card {
-        min-width: 90vw;
-        max-width: 90vw;
+        min-width: 85vw;
+        max-width: 85vw;
     }
     
     .dishes-scroll-container {
         margin: 0;
-        padding: 20px 5vw;
+        padding: 20px 7.5vw;
         overflow-x: hidden;
     }
     
     .dishes-track {
-        gap: 5vw;
+        gap: 7.5vw;
     }
 }
 
