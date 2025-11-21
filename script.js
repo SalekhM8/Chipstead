@@ -16,11 +16,20 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // ===================================
-// NAVIGATION
+// NAVIGATION - APPEARS ON SCROLL
 // ===================================
 const nav = document.getElementById('mainNav');
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
+
+// Show nav after scrolling past hero
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 600) {
+        nav.classList.add('show-nav');
+    } else {
+        nav.classList.remove('show-nav');
+    }
+});
 
 // Mobile menu toggle
 if (navToggle && navLinks) {

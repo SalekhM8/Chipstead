@@ -97,8 +97,8 @@
     <!-- Fixed Background Image - Stays While Scrolling -->
     <div class="fixed-background"></div>
 
-    <!-- Navigation - Dishoom Style -->
-    <nav class="glass-nav" id="mainNav">
+    <!-- Navigation - Dishoom Style - Appears on Scroll -->
+    <nav class="glass-nav hidden-nav" id="mainNav">
         <div class="nav-container">
             <a href="index.html" class="logo">
                 <img src="chipster.png" alt="Chipstead Tandoori Logo">
@@ -120,35 +120,49 @@
         </div>
     </nav>
 
-    <!-- Hero Section - Exactly Like Dishoom -->
+    <!-- Hero Section - Initial Landing -->
     <section class="hero">
         <div class="container">
-            <!-- Welcome Quote -->
-            <div class="hero-quote-box scroll-reveal-up">
-                <p class="hindi-text">सभी का स्वागत</p>
-                <p class="english-text">All Welcome</p>
+            <!-- Logo at top -->
+            <div class="hero-logo-large">
+                <img src="chipster.png" alt="Chipstead Tandoori">
+                <h1 class="site-title">CHIPSTEAD TANDOORI</h1>
             </div>
             
-            <!-- Main Hero Content -->
-            <div class="hero-content">
-                <div class="video-card-bg">
-                    <video autoplay muted loop playsinline>
-                        <source src="chipstead.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <p class="hero-tagline">From Chipstead with Love</p>
-                <h1 class="hero-title">Experience Authentic<br><span class="highlight">Indian Cuisine</span></h1>
-                <div class="decorative-line"></div>
-                <p class="hero-subtitle">Where tradition meets culinary excellence</p>
-                <div class="hero-buttons">
-                    <a href="menu.html" class="btn btn-primary">View Menu</a>
-                    <a href="https://chipsteadtandoori.app4food.co.uk/" class="btn btn-secondary">Order Online</a>
-                </div>
-            </div>
+            <!-- Tagline -->
+            <p class="hero-intro-text">Authentic Indian Cuisine in Chipstead</p>
             
-            <!-- Hero Description -->
-            <div class="hero-description-box scroll-reveal-up">
-                <p class="hero-story">Each dish at Chipstead Tandoori is a love letter to India – its food and its culture, its many varied people, its rich history and its endless eccentricities.</p>
+            <!-- Three Hero Cards - Like Dishoom -->
+            <div class="hero-card-grid">
+                <a href="menu.html" class="hero-nav-card">
+                    <div class="hero-card-image">
+                        <img src="tandoori.png" alt="Menu">
+                    </div>
+                    <div class="hero-card-label">
+                        <h2>MENU</h2>
+                        <p>Breakfast, lunch, dinner and late tipples</p>
+                    </div>
+                </a>
+                
+                <a href="blog.html" class="hero-nav-card">
+                    <div class="hero-card-image">
+                        <img src="balti.png" alt="Blog">
+                    </div>
+                    <div class="hero-card-label">
+                        <h2>BLOG</h2>
+                        <p>Stories and recipes from our kitchen</p>
+                    </div>
+                </a>
+                
+                <a href="#about" class="hero-nav-card">
+                    <div class="hero-card-image">
+                        <img src="lambchops.png" alt="About">
+                    </div>
+                    <div class="hero-card-label">
+                        <h2>ABOUT</h2>
+                        <p>Our story and heritage</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
