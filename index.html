@@ -94,10 +94,8 @@
         </div>
     </div>
 
-    <!-- Static Background Image -->
-    <div class="hero-background">
-        <img src="foodhero.png" alt="Authentic Indian Cuisine Background">
-    </div>
+    <!-- Fixed Background Image - Stays While Scrolling -->
+    <div class="fixed-background"></div>
 
     <!-- Navigation - Dishoom Style -->
     <nav class="glass-nav" id="mainNav">
@@ -122,15 +120,23 @@
         </div>
     </nav>
 
-    <!-- Hero Section - Dishoom Style -->
+    <!-- Hero Section - Exactly Like Dishoom -->
     <section class="hero">
-        <div class="hero-mega-container">
+        <div class="container">
+            <!-- Welcome Quote -->
+            <div class="hero-quote-box scroll-reveal-up">
+                <p class="hindi-text">सभी का स्वागत</p>
+                <p class="english-text">All Welcome</p>
+            </div>
+            
+            <!-- Main Hero Content -->
             <div class="hero-content">
                 <div class="video-card-bg">
                     <video autoplay muted loop playsinline>
                         <source src="chipstead.mp4" type="video/mp4">
                     </video>
                 </div>
+                <p class="hero-tagline">From Chipstead with Love</p>
                 <h1 class="hero-title">Experience Authentic<br><span class="highlight">Indian Cuisine</span></h1>
                 <div class="decorative-line"></div>
                 <p class="hero-subtitle">Where tradition meets culinary excellence</p>
@@ -140,19 +146,9 @@
                 </div>
             </div>
             
-            <!-- Side Graphics on Hero -->
-            <div class="hero-side-graphic left scroll-reveal-left">
-                <div class="hero-mini-card">
-                    <img src="onionbhaji.png" alt="Appetizers">
-                    <div class="mini-card-label">Starters</div>
-                </div>
-            </div>
-            
-            <div class="hero-side-graphic right scroll-reveal-right">
-                <div class="hero-mini-card">
-                    <img src="lambchops.png" alt="Premium Dishes">
-                    <div class="mini-card-label">Specials</div>
-                </div>
+            <!-- Hero Description -->
+            <div class="hero-description-box scroll-reveal-up">
+                <p class="hero-story">Each dish at Chipstead Tandoori is a love letter to India – its food and its culture, its many varied people, its rich history and its endless eccentricities.</p>
             </div>
         </div>
     </section>
@@ -292,12 +288,76 @@
         </div>
     </section>
 
+    <!-- Quote Section - Dishoom Style -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="large-quote-box scroll-reveal-up">
+                <div class="quote-mark">"</div>
+                <p class="quote-text">Treasured Guest</p>
+                <div class="decorative-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Card Section - Like Dishoom's Menu/Reservations/Store -->
+    <section class="three-card-section">
+        <div class="container">
+            <h2 class="section-big-title scroll-reveal-up">Peruse menus, make reservations,<br>experience authenticity</h2>
+            <div class="three-card-grid">
+                <div class="image-card-dishoom scroll-reveal-left">
+                    <div class="card-image-wrapper">
+                        <img src="tandoori.png" alt="Menus">
+                        <video muted loop playsinline class="card-hover-video">
+                            <source src="chipstead.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-label-box">
+                        <h3>MENUS</h3>
+                        <p>Breakfast, lunch, dinner and late tipples</p>
+                        <div class="card-arrow">→</div>
+                    </div>
+                </div>
+                
+                <div class="image-card-dishoom scroll-reveal-up">
+                    <div class="card-image-wrapper">
+                        <img src="balti.png" alt="Reservations">
+                        <video muted loop playsinline class="card-hover-video">
+                            <source src="chef.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-label-box">
+                        <h3>RESERVATIONS</h3>
+                        <p>For bookings and large groups</p>
+                        <div class="card-arrow">→</div>
+                    </div>
+                </div>
+                
+                <div class="image-card-dishoom scroll-reveal-right">
+                    <div class="card-image-wrapper">
+                        <img src="lambchops.png" alt="Takeaway">
+                        <video muted loop playsinline class="card-hover-video">
+                            <source src="chipstead.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-label-box">
+                        <h3>TAKEAWAY</h3>
+                        <p>Order online for collection</p>
+                        <div class="card-arrow">→</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Feature Graphics Section 1 - Tandoori Slide -->
     <section class="feature-graphics-section">
         <div class="container">
             <div class="feature-grid-layout">
                 <div class="feature-image-large scroll-reveal-left" id="tandooriFeature">
                     <img src="tandoori.png" alt="Tandoori Delicacies">
+                    <video muted loop playsinline class="feature-hover-video">
+                        <source src="chipstead.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="feature-content-box scroll-reveal-right">
                     <div class="video-card-bg">
@@ -305,6 +365,7 @@
                             <source src="chipstead.mp4" type="video/mp4">
                         </video>
                     </div>
+                    <p class="feature-label">ABOVE:</p>
                     <h2>Tandoori Excellence</h2>
                     <div class="decorative-line" style="margin-left: 0;"></div>
                     <p>Our traditional clay oven, the tandoor, reaches temperatures of over 480°C, sealing in flavours and creating that distinctive char and smokiness that makes our tandoori dishes legendary.</p>

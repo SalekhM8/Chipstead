@@ -229,10 +229,10 @@ if (chefVideo && chefVideoContainer && chefContent) {
 }
 
 // ===================================
-// DISH CARD HOVER - PLAY VIDEO
+// CARD HOVER - PLAY VIDEO (ALL CARDS)
 // ===================================
-document.querySelectorAll('.dish-card').forEach(card => {
-    const video = card.querySelector('.dish-image-container video');
+document.querySelectorAll('.dish-card, .image-card-dishoom, .feature-image-large').forEach(card => {
+    const video = card.querySelector('video:not(.video-card-bg video)');
     if (video) {
         card.addEventListener('mouseenter', () => {
             video.play().catch(err => console.log('Video play prevented:', err));
