@@ -72,11 +72,11 @@ if (scrollLeftBtn && scrollRightBtn && dishesTrack) {
     
     function updatePosition() {
         if (isMobile) {
-            const cardWidth = window.innerWidth * 0.95;
+            const cardWidth = window.innerWidth * 0.925;
             const offset = -(currentIndex * cardWidth);
             dishesTrack.style.transform = `translateX(${offset}px)`;
         } else {
-            const cardWidth = 410;
+            const cardWidth = 370;
             const offset = -(currentIndex * cardWidth);
             dishesTrack.style.transform = `translateX(${offset}px)`;
         }
