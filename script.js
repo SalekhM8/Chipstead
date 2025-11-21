@@ -68,12 +68,6 @@ if (scrollLeftBtn && scrollRightBtn && dishesTrack) {
     const isMobile = window.innerWidth <= 768;
     let autoScrollInterval;
     
-    // Duplicate dishes for infinite scroll effect on desktop
-    if (!isMobile && dishesTrack) {
-        const dishes = dishesTrack.innerHTML;
-        dishesTrack.innerHTML += dishes;
-    }
-    
     const totalCards = 4;
     
     function updatePosition() {
@@ -82,95 +76,21 @@ if (scrollLeftBtn && scrollRightBtn && dishesTrack) {
             const offset = -(currentIndex * cardWidth);
             dishesTrack.style.transform = `translateX(${offset}px)`;
         } else {
-            scrollContainer.scrollBy({
-                left: currentIndex > 0 ? 400 : -400,
-                behavior: 'smooth'
-            });
+            const cardWidth = 410;
+            const offset = -(currentIndex * cardWidth);
+            dishesTrack.style.transform = `translateX(${offset}px)`;
         }
-    }
-    
-    // Auto-scroll on mobile every 2 seconds
-    if (isMobile) {
-        autoScrollInterval = setInterval(() => {
-            currentIndex = (currentIndex + 1) % totalCards;
-            updatePosition();
-        }, 2000);
     }
     
     scrollLeftBtn.addEventListener('click', () => {
-        if (isMobile) {
-            clearInterval(autoScrollInterval);
-            currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-            updatePosition();
-            setTimeout(() => {
-                autoScrollInterval = setInterval(() => {
-                    currentIndex = (currentIndex + 1) % totalCards;
-                    updatePosition();
-                }, 2000);
-            }, 5000);
-        } else {
-            scrollContainer.scrollBy({ left: -400, behavior: 'smooth' });
-        }
+        currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+        updatePosition();
     });
 
     scrollRightBtn.addEventListener('click', () => {
-        if (isMobile) {
-            clearInterval(autoScrollInterval);
-            currentIndex = (currentIndex + 1) % totalCards;
-            updatePosition();
-            setTimeout(() => {
-                autoScrollInterval = setInterval(() => {
-                    currentIndex = (currentIndex + 1) % totalCards;
-                    updatePosition();
-                }, 2000);
-            }, 5000);
-        } else {
-            scrollContainer.scrollBy({ left: 400, behavior: 'smooth' });
-        }
+        currentIndex = (currentIndex + 1) % totalCards;
+        updatePosition();
     });
-
-    // Pause auto-scroll on hover (desktop only)
-    if (!isMobile && dishesTrack) {
-        dishesTrack.addEventListener('mouseenter', () => {
-            dishesTrack.style.animationPlayState = 'paused';
-        });
-        dishesTrack.addEventListener('mouseleave', () => {
-            dishesTrack.style.animationPlayState = 'running';
-        });
-    }
-    
-    // Touch swipe support for mobile
-    if (isMobile) {
-        let touchStartX = 0;
-        let touchEndX = 0;
-        
-        dishesTrack.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-            clearInterval(autoScrollInterval);
-        });
-        
-        dishesTrack.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-            setTimeout(() => {
-                autoScrollInterval = setInterval(() => {
-                    currentIndex = (currentIndex + 1) % totalCards;
-                    updatePosition();
-                }, 2000);
-            }, 5000);
-        });
-        
-        function handleSwipe() {
-            if (touchStartX - touchEndX > 50) {
-                currentIndex = (currentIndex + 1) % totalCards;
-                updatePosition();
-            }
-            if (touchEndX - touchStartX > 50) {
-                currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-                updatePosition();
-            }
-        }
-    }
 }
 
 // ===================================
@@ -240,17 +160,19 @@ if (chefVideo && chefVideoContainer && chefContent) {
 // ===================================
 // CARD HOVER - PLAY VIDEO (ALL CARDS)
 // ===================================
-document.querySelectorAll('.dish-card, .image-card-dishoom, .feature-image-large').forEach(card => {
-    const video = card.querySelector('video:not(.video-card-bg video)');
-    if (video) {
-        card.addEventListener('mouseenter', () => {
-            video.play().catch(err => console.log('Video play prevented:', err));
-        });
-        card.addEventListener('mouseleave', () => {
-            video.pause();
-            video.currentTime = 0;
-        });
-    }
+document.querySelectorAll('.dish-card, .image-card-dishoom, .feature-image-large, .hero-nav-card, .card-image-wrapper').forEach(card => {
+    const videos = card.querySelectorAll('video');
+    videos.forEach(video => {
+        if (!video.closest('.video-card-bg')) {
+            card.addEventListener('mouseenter', () => {
+                video.play().catch(err => console.log('Video play prevented:', err));
+            });
+            card.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+        }
+    });
 });
 
 // ===================================
