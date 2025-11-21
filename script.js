@@ -229,6 +229,22 @@ if (chefVideo && chefVideoContainer && chefContent) {
 }
 
 // ===================================
+// DISH CARD HOVER - PLAY VIDEO
+// ===================================
+document.querySelectorAll('.dish-card').forEach(card => {
+    const video = card.querySelector('.dish-image-container video');
+    if (video) {
+        card.addEventListener('mouseenter', () => {
+            video.play().catch(err => console.log('Video play prevented:', err));
+        });
+        card.addEventListener('mouseleave', () => {
+            video.pause();
+            video.currentTime = 0;
+        });
+    }
+});
+
+// ===================================
 // COOK IMAGE - SLIDE IN ANIMATION
 // ===================================
 const cookImage = document.getElementById('cookImage');
